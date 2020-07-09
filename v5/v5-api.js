@@ -83,8 +83,8 @@ const getToken = async () => {
         options.url = configuration.constants.apiV5.loginUrl
         options.headers = setV5Header()
         options.body = {}
-        options.body.password = configuration.config.password
-        options.body.username = configuration.config.user
+        options.body.Password = configuration.config.password
+        options.body.UserName = configuration.config.user
 
         const data = await callMyQDevice(options, configuration.constants.POST)
 
