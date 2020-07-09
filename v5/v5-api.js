@@ -159,7 +159,7 @@ const setDoorState = async (change, providedSerialNumber) => {
 
         serialNumber = providedSerialNumber ? providedSerialNumber : serialNumber
 
-        options.url = configuration.constants.apiV5.getAccounts + accountId + configuration.constants.apiV5.devicesSub + serialNumber + configuration.constants.apiV5.actions
+        options.url = configuration.constants.apiV5.getDevices + accountId + configuration.constants.apiV5.devicesSub + serialNumber + configuration.constants.apiV5.actions
         options.headers = {}
         options.headers[configuration.constants.contentType] = configuration.constants.apiV5.base.contentType
         options.headers.SecurityToken = token
